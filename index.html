@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="./assets/teaser/images/favicon.ico" type="image/x-icon" rel="shortcut icon" />
+    <title>Thiếu Niên Tây Du</title>
+    <!-- Meta Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1980219806061864');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+                   src="https://www.facebook.com/tr?id=1980219806061864&ev=PageView&noscript=1"
+        /></noscript>
+    <!-- End Meta Pixel Code -->
+    <meta name="author" content="VTC" />
+    <meta name="description" content="Game Chiến Thuật Cyber, Tái Lập Tân Thế Giới">
+    <meta name="keywords" content="tay du,tay du ky,wukong,chien thuat,IDLE,gacha,huyen thoai,3d,game hay vtc,vtc,vng,funtap,soha, hanh đong,RPG,SLG">
+    <meta property="og:site_name" content="Thiếu Niên Tây Du"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://thieunientaydu.splay.vn"/>
+    <meta property="og:title" content="Thiếu Niên Tây Du"/>
+    <meta property="og:description" content="Free 100 lượt gacha mỗi ngày, Phúc Lợi Khủng, Đăng Nhập Nhận Skin Tôn Ngộ KhôngGame Chiến Thuật Cyber, Tái Lập Tân Thế Giới"/>
+    <meta property="og:image:type" content="image/jpeg"/>
+    <meta property="og:image" content="https://thieunientaydu.splay.vn/assets/teaser/sharefb.jpg"/>
+    <meta name="facebook-domain-verification" content="pqn4eesdi9ueegsji9iy7c3td6ktuuz" />
+    <script type="text/javascript" src="./assets/teaser/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="./assets/teaser/js/jquery.fullPage.js"></script>
+    <script type="text/javascript" src="./assets/teaser/js/jquery.SuperSlide.2.1.1.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./assets/teaser/css/reset.css?v=1.4" />
+    <link rel="stylesheet" type="text/css" href="./assets/teaser/css/style.css?v=1.4" />
+    <link rel="stylesheet" href="./assets/teaser/css/jquery.fullPage.css?v=1.4">
+    <link rel="stylesheet" href="./assets/teaser/css/mcgic.css">
+
+    <link rel="stylesheet" href="./assets/teaser/css/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./assets/teaser/css/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/teaser/css/swiper-3.3.1.min.css" />
+
+
+    <link rel="stylesheet" href="./assets/teaser/css/fancybox.css">
+
+    <!-- menu right-->
+    <script type="text/javascript" src="./assets/teaser/js/fixedbox.js"></script>
+
+    <!--popup code-->
+    <link rel="stylesheet" href="./assets/teaser/css/vendor.css" />
+    <style>
+        .music-icon {
+            position: fixed;
+            top: 10px;        /* cách top 30px */
+            right:200px;      /* nằm góc phải */
+            display:flex; align-items:flex-end; gap:3px;
+            width:28px; height:20px;
+            cursor:pointer;
+            z-index:9999;
+        }
+
+        @media  screen and (max-width: 768px) {
+            .music-icon {
+                position: fixed;
+                top: 10px;        /* cách top 30px */
+                right:60px;      /* nằm góc phải */
+                display:flex; align-items:flex-end; gap:3px;
+                width:28px; height:20px;
+                cursor:pointer;
+                z-index:9999;
+            }
+        }
+
+        .music-icon .bar {
+            flex: 1;
+            background: #fff;   /* màu trắng như trong ảnh */
+            border-radius: 2px;
+            height: 4px;        /* mặc định nhỏ */
+        }
+
+        /* Khi bật nhạc thì thêm class "playing" để chạy animation */
+        .music-icon.playing .bar {
+            animation: bounce 1s infinite ease-in-out;
+        }
+
+        .music-icon.playing .bar:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+        .music-icon.playing .bar:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+        .music-icon.playing .bar:nth-child(4) {
+            animation-delay: 0.6s;
+        }
+
+        @keyframes  bounce {
+            0%, 100% { height: 4px; }
+            50% { height: 100%; }
+        }
+    </style>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MGMW92NB');</script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MGMW92NB"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<!-- Nhạc nền -->
+<audio id="bgMusic" loop>
+    <source src="https://thieunientaydu.splay.vn/assets/teaser/images/sound.mp3" type="audio/mpeg">
+</audio>
+<div id="myfullpage">
+    <div class="section p1" id="section-one">
+        <!--<video autoplay="autoplay" loop="loop" muted="" poster="./assets/teaser/images/banner.jpg" class="lazyload pic-web">
+			<source src="./assets/teaser/images/header.mp4" type="video/mp4">
+		</video>-->
+        <div class="logo pic-web"><img src="./assets/teaser/images/logo.png" alt="Thiếu niên tây du"></div>
+        <div class="slogan">
+            <p>
+                <img class="pic-web" src="./assets/teaser/images/slogan.png" alt="Game chiến thuật cyber - Tái lập tân thế giới">
+                <img class="pic-wap" src="./assets/teaser/images/slogan-w.png" alt="Game chiến thuật cyber - Tái lập tân thế giới">
+            </p>
+        </div>
+        <div class="yyly">
+            <div class="yy-an pic-web clearfloat">
+                <div class="down-box clearfloat">
+                    <li><a href="" target="_blank"><img data-src="./assets/teaser/images/bt-napthe.png" alt="Nạp Thẻ"></a></li>
+                    <li>
+                        <a href="https://tntd.onelink.me/KfFD/teaser" target="_blank"><img data-src="./assets/teaser/images/bt-taigame.png" alt="Tải Game"></a>
+                        <a href="https://app.mobigame.vn/thieunientaydu/thieunientaydu.apk" target="_blank"><img data-src="./assets/teaser/images/bt-taiapk.png" alt="Tải APK"></a>
+                    </li>
+                    <li><a href="javascript:void(0)" class="show-dangky"><img data-src="./assets/teaser/images/bt-nhancode.png" alt="Nhận Code"></a></li>
+                </div>
+            </div>
+        </div>
+        <div class="video">
+            <a href="https://www.youtube.com/embed/tkR3VxVuQeA?si=_XzGtCGDxVLNJDeF" data-fancybox class="play animate__animated animate__tada animate__infinite animate__slow">Xem trailer</a>
+        </div>
+    </div>
+    <div class="section p2" id="section-two">
+        <div class="sec2">
+            <div class="sec2-title wfb">
+                <img class="pic-web" data-src="./assets/teaser/images/slogan2.png" alt="Đăng ký trước - rước blink box limited">
+                <img class="pic-wap" data-src="./assets/teaser/images/slogan2-m.png" alt="Đăng ký trước - rước blink box limited">
+            </div>
+            <div class="sec2-button wff">
+                <li><a href="javascript:void(0)" class="show-theledkt"><img data-src="./assets/teaser/images/bt-thele.png" alt="Thể lệ"></a></li>
+                <li><a target="_blank" href="https://tntd.onelink.me/KfFD/teaser"><img data-src="./assets/teaser/images/bt-dkn.png" alt="Đăng ký ngay"></a></li>
+                <li><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSekNnKjJscqYvIQ6h1_bCNHmj-JbjjywWgvFBpKftda6FzmiQ/viewform?usp=dialog"><img data-src="./assets/teaser/images/bt-nhanqua.png" alt="Nhận quà"></a></li>
+            </div>
+            <div class="box-timeline">
+                <div class="timeline-get">
+                    <ul>
+                        <li class="btn-datmoc active">
+                            <a href="javascript:void(0);">
+                                <div class="p5-box">
+                                    <img src="./assets/teaser/images/moc1.png" alt="Thiếu niên tây du" />
+                                    <img src="./assets/teaser/images/moc1-a.png" alt="Thiếu niên tây du" />
+                                </div>
+                            </a>
+                        </li>
+                        <li class="btn-datmoc active">
+                            <a href="javascript:void(0);">
+                                <div class="p5-box">
+                                    <img src="./assets/teaser/images/moc2.png" alt="Thiếu niên tây du" />
+                                    <img src="./assets/teaser/images/moc2-a.png" alt="Thiếu niên tây du" />
+                                </div>
+                            </a>
+                        </li>
+                        <li class="btn-datmoc active">
+                            <a href="javascript:void(0);">
+                                <div class="p5-box">
+                                    <img src="./assets/teaser/images/moc3.png" alt="Thiếu niên tây du" />
+                                    <img src="./assets/teaser/images/moc3-a.png" alt="Thiếu niên tây du" />
+                                </div>
+                            </a>
+                        </li>
+                        <li class="btn-datmoc active">
+                            <a href="javascript:void(0);">
+                                <div class="p5-box">
+                                    <img src="./assets/teaser/images/moc4.png" alt="Thiếu niên tây du" />
+                                    <img src="./assets/teaser/images/moc4-a.png" alt="Thiếu niên tây du" />
+                                </div>
+                            </a>
+                        </li>
+                        <li class="btn-chua-datmoc">
+                            <a href="javascript:void(0);">
+                                <div class="p5-box">
+                                    <img src="./assets/teaser/images/moc5.png" alt="Siêu Xay Da" />
+                                    <img src="./assets/teaser/images/moc5-a.png" alt="Siêu Xay Da" />
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="timeline-water">
+                        <img class="pic-wap" src="./assets/teaser/images/p5-line-active-m.png" alt="Thiếu niên tây du" />
+                        <img class="pic-web" src="./assets/teaser/images/p5-line-active.png" alt="Thiếu niên tây du" />
+                        <div class="timeline-water-active"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section p3" id="section-three">
+        <div class="sec3">
+            <div class="sec5-bn-genaral"><a href=""><img data-src="./assets/teaser/images/class/bt-linhtuong.png" alt="Danh tướng"></a></div>
+            <div class="slide-frame3">
+                <div class="class-t"><img data-src="./assets/teaser/images/slogan3.png" alt="Linh tướng phổ"></div>
+                <div class="swiper-container class_swiper ">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="class_cont">
+                                <!--<div class="class_img">
+                                    <img class="nhanvat ani pic-web" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0s" src="./assets/teaser/images/class/art-yeulinh.png" alt="" />
+                                    <img class="nhanvat ani pic-wap" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0s" src="./assets/teaser/images/class/art-yeulinh-m.png" alt="" />
+                                </div>-->
+                                <div class="class-title ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0s"   >
+                                    <img class="center-align" src="./assets/teaser/images/class/title-yeulinh.png" alt="Yêu linh" />
+                                </div>
+                            </div>
+                            <div class="class_bg_yeulinh pic-web"></div>
+                            <!--<img class="class_bg img-responsive pic-web" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0s" src="./assets/teaser/images/class/bg-yeulinh.jpg" alt="" />-->
+                            <img class="class_bg img-responsive pic-wap" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0s" src="./assets/teaser/images/class/bg-yeulinh-m.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="class_cont">
+                                <!--<div class="class_img">
+                                    <img class="nhanvat ani pic-web" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0s" src="./assets/teaser/images/class/art-nhangioi.png" alt="" />
+                                    <img class="nhanvat ani pic-wap" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0s" src="./assets/teaser/images/class/art-nhangioi-m.png" alt="" />
+                                </div>-->
+                                <div class="class-title ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0s"   >
+                                    <img class="center-align" src="./assets/teaser/images/class/title-nhangioi.png" alt="Nhân giới" />
+                                </div>
+                            </div>
+                            <div class="class_bg_nhangioi pic-web"></div>
+                            <!--<img class="class_bg img-responsive pic-web" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0s" src="./assets/teaser/images/class/bg-nhangioi.jpg" alt="" />-->
+                            <img class="class_bg img-responsive pic-wap" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0s" src="./assets/teaser/images/class/bg-nhangioi-m.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="class_cont">
+                                <!--<div class="class_img">
+                                    <img class="nhanvat ani pic-web" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0s" src="./assets/teaser/images/class/art-cuuthien.png" alt="" />
+                                    <img class="nhanvat ani pic-wap" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0s" src="./assets/teaser/images/class/art-cuuthien-m.png" alt="" />
+                                </div>-->
+                                <div class="class-title ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0s"   >
+                                    <img class="center-align" src="./assets/teaser/images/class/title-cuuthien.png" alt="Cửu Thiên" />
+                                </div>
+                            </div>
+                            <div class="class_bg_cuuthien pic-web"></div>
+                            <!--<img class="class_bg img-responsive pic-web" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0s" src="./assets/teaser/images/class/bg-cuuthien.jpg" alt="" />-->
+                            <img class="class_bg img-responsive pic-wap" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0s" src="./assets/teaser/images/class/bg-cuuthien-m.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="class_cont">
+                                <!--<div class="class_img">
+                                    <img class="nhanvat ani pic-web" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0s" src="./assets/teaser/images/class/art-cuclac.png" alt="" />
+                                    <img class="nhanvat ani pic-wap" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0s" src="./assets/teaser/images/class/art-cuclac-m.png" alt="" />
+                                </div>-->
+                                <div class="class-title ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0s"   >
+                                    <img class="center-align" src="./assets/teaser/images/class/title-cuclac.png" alt="Cửu Thiên" />
+                                </div>
+                            </div>
+                            <div class="class_bg_cuclac pic-web"></div>
+                            <!--<img class="class_bg img-responsive pic-web" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0s" src="./assets/teaser/images/class/bg-cuclac.jpg" alt="" />-->
+                            <img class="class_bg img-responsive pic-wap" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0s" src="./assets/teaser/images/class/bg-cuclac-m.jpg" alt="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="class_opa_box">
+                    <ul class="class_tab">
+                        <li id="class_tab_yeulinh" class="on"></li>
+                        <li id="class_tab_nhangioi"></li>
+                        <li id="class_tab_cuuthien"></li>
+                        <li id="class_tab_cuclac"></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="section p4" id="section-four">
+        <div class="sec4">
+            <div class="sec4-title wfb">
+                <img class="pic-web" data-src="./assets/teaser/images/slogan4.png" alt="Hành giả đua top - On top nhận quà">
+                <img class="pic-wap" data-src="./assets/teaser/images/slogan4-m.png" alt="Hành giả đua top - On top nhận quà">
+            </div>
+            <div class="sec4-button wff">
+                <li><a href="javascript:void(0)" class="show-theledt"><img data-src="./assets/teaser/images/bt-thele.png" alt="Thể lệ"></a></li>
+                <li><a href=""><img data-src="./assets/teaser/images/bt-chienngay.png" alt="Đua top"></a></li>
+            </div>
+        </div>
+    </div>
+    <div class="section p5" id="section-five">
+        <div class="sec5">
+            <div class="sec5-title wfb">
+                <img class="pic-web" data-src="./assets/teaser/images/slogan5.png" alt="Bản đồ rộng lớn - Cốt truyện dị bản">
+                <img class="pic-wap" data-src="./assets/teaser/images/slogan5-m.png" alt="Bản đồ rộng lớn - Cốt truyện dị bản">
+            </div>
+            <div class="product f-SVN-Russell">
+                <div class="container">
+
+                    <div class="product__slider">
+                        <div class="product__slider-item">
+
+                            <div class="product__slider-box">
+                                <div class="product__slider-box-text">
+                                    <span>01 / 05 – Trường An</span>
+                                    <p>Khi sức mạnh nguyên thủy của thế giới - “Linh Diễn” xuất hiện, rọi ánh sáng xuống Đại Đường phồn thịnh,
+                                        Kinh đô Trường An đã trở thành thánh đường của khoa học, văn hóa và chân lý.</p>
+                                </div>
+                                <div class="pic-web"><img src="./assets/teaser/images/slideframe5/1.jpg" alt=""></div>
+                                <div class="pic-wap"><img src="./assets/teaser/images/slideframe5/1-m.jpg" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="product__slider-item">
+                            <div class="product__slider-box">
+                                <div class="product__slider-box-text">
+                                    <span>02 / 05 – Cửu Sương Thiên Cung</span>
+                                    <p>Khác với người thường, các tiên nhân Cửu Sương hiểu rõ rủi ro ẩn chứa trong thần lực của “Linh Diễn”.
+                                        Họ luôn thận trọng khi sử dụng sức mạnh này, và không bao giờ xem nó là nguồn lực duy nhất để tiến bộ</p>
+                                </div>
+                                <div class="pic-web"><img src="./assets/teaser/images/slideframe5/2.jpg" alt=""></div>
+                                <div class="pic-wap"><img src="./assets/teaser/images/slideframe5/2-m.jpg" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="product__slider-item">
+                            <div class="product__slider-box">
+                                <div class="product__slider-box-text">
+                                    <span>03 / 05 – Tiểu Lôi Âm Tự</span>
+                                    <p>Sắc bất dị Không, Không bất dị Sắc, Sắc tức thị Không, Không tức thị Sắc.
+                                        Trong cõi Tây Du kỳ ảo này, dù muôn pháp hiện bày dưới hình tướng khác nhau - tất cả chỉ là huyễn hóa. Khi “Linh Diễn” xuất thế, đạo và ma giao nhau. Chỉ có người tỉnh thức, thấu suốt bản tâm, thoát khỏi cõi mê, mới bước vào được chân pháp Tây Du chân chính.</p>
+                                </div>
+                                <div class="pic-web"><img src="./assets/teaser/images/slideframe5/3.jpg" alt=""></div>
+                                <div class="pic-wap"><img src="./assets/teaser/images/slideframe5/3-m.jpg" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="product__slider-item">
+                            <div class="product__slider-box">
+                                <div class="product__slider-box-text">
+                                    <span>04 / 05 – Ngũ Hành Sơn</span>
+                                    <p>Nơi linh căn khai mở, vạn linh quy tụ. Pháp bảo mạnh mẽ, trấn yêu phục ma. Tu đạo bên ngoài, ngộ lý bên trong, chính tà phân định. Chỉ khi tiêu trừ được tai họa, thiên hạ mới thật sự thái bình</p>
+                                </div>
+                                <div class="pic-web"><img src="./assets/teaser/images/slideframe5/4.jpg" alt=""></div>
+                                <div class="pic-wap"><img src="./assets/teaser/images/slideframe5/4-m.jpg" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="product__slider-item">
+                            <div class="product__slider-box">
+                                <div class="product__slider-box-text">
+                                    <span>05 / 05 – Ngũ Trang Quán</span>
+                                    <p>Bốn tông phái, sáu Hành Giả cùng đồng hành. Hãy cùng nhau bắt đầu chuyến hành trình phi phàm của những kẻ bình phàm.
+                                        Hỡi những thiếu niên trẻ tuổi! Hành trình Tây Hành kỳ ảo đã sẵn sàng, hãy cùng viết lên lại trang sử thi phương Đông thời đại mới…</p>
+                                </div>
+                                <div class="pic-web"><img src="./assets/teaser/images/slideframe5/5.jpg" alt=""></div>
+                                <div class="pic-wap"><img src="./assets/teaser/images/slideframe5/5-m.jpg" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="nav__slider">
+                        <div class="nav__slider-item">
+                            <div class="nav__slider-box">
+                                <img src="./assets/teaser/images/slideframe5/1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="nav__slider-item">
+                            <div class="nav__slider-box">
+                                <img src="./assets/teaser/images/slideframe5/2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="nav__slider-item">
+                            <div class="nav__slider-box">
+                                <img src="./assets/teaser/images/slideframe5/3.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="nav__slider-item">
+                            <div class="nav__slider-box">
+                                <img src="./assets/teaser/images/slideframe5/4.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="nav__slider-item">
+                            <div class="nav__slider-box">
+                                <img src="./assets/teaser/images/slideframe5/5.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section p6" id="section-six">
+        <div class="sec6">
+            <div class="sec6-title wfb">
+                <img data-src="./assets/teaser/images/slogan6.png" alt="Điểm đặc sắc">
+            </div>
+            <div class="slide-frame6 wfi">
+                <div class="features__wrapper" >
+                    <div class="features__carousel">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img class="lazyload pic-web" data-src="./assets/teaser/images/slideimg/img1.png" alt="">
+                                    <img class="lazyload pic-wap" data-src="./assets/teaser/images/slideimg/img1-m.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="lazyload pic-web" data-src="./assets/teaser/images/slideimg/img2.png" alt="">
+                                    <img class="lazyload pic-wap" data-src="./assets/teaser/images/slideimg/img2-m.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="lazyload pic-web" data-src="./assets/teaser/images/slideimg/img3.png" alt="">
+                                    <img class="lazyload pic-wap" data-src="./assets/teaser/images/slideimg/img3-m.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="lazyload pic-web" data-src="./assets/teaser/images/slideimg/img4.png" alt="">
+                                    <img class="lazyload pic-wap" data-src="./assets/teaser/images/slideimg/img4-m.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="lazyload pic-web" data-src="./assets/teaser/images/slideimg/img5.png" alt="">
+                                    <img class="lazyload pic-wap" data-src="./assets/teaser/images/slideimg/img5-m.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="lazyload pic-web" data-src="./assets/teaser/images/slideimg/img6.png" alt="">
+                                    <img class="lazyload pic-wap" data-src="./assets/teaser/images/slideimg/img6-m.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="lazyload pic-web" data-src="./assets/teaser/images/slideimg/img7.png" alt="">
+                                    <img class="lazyload pic-wap" data-src="./assets/teaser/images/slideimg/img7-m.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next">
+                            <div class="slide-next"></div>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <div class="slide-prev"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        var btn_loop = function () {
+            setTimeout(function () {
+                $('.slogan p img').toggleClass('ac');
+                btn_loop();
+            }, 700);
+        }
+        btn_loop();
+    });
+</script>
+<footer class="foot clearfloat">
+    <div class="foot-left"><a></a></div>
+    <div class="foot-right f-roboto-light">
+        <p>Copyright 2014 VTC Mobile. All rights reserved </p>
+        <p>Công ty cổ phần VTC Dịch vụ di động - Tầng 11, Tòa nhà VTC Online </p>
+        <p>Số 18 Tam Trinh, phường Minh Khai, quận Hai Bà Trưng, Hà Nội </p>
+        <p>Người chịu trách nhiệm quản lý nội dung: Ông Nguyễn Viết Quang Minh. </p>
+        <p>Giấy phép phê duyệt nội dung kịch bản trò chơi điện tử trên mạng số 349 /QĐ-PTTH&TTĐT </p>
+        <p><a href="" target="_blank">Hướng dẫn cài đặt</a> |
+            <a href="" target="_blank">Điều khoản</a> <br></p>
+    </div>
+</footer>
+<div class="head clearfloat" id="header">
+    <div class="logo pic-wap"><img src="./assets/teaser/images/icon.png" alt="Thiếu niên tây du"></div>
+    <div class="ic pic-wap">
+        <div class="music-icon" id="musicIcon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <a href="https://www.facebook.com/thieunientaydu.splay.vn/" target="_blank"><img src="./assets/teaser/images/ic-fb.png" alt="Facebook"></a>
+        <a href="https://www.facebook.com/groups/thieunientaydu.splay.vn/" target="_blank"><img src="./assets/teaser/images/ic-group.png" alt="Group"></a>
+    </div>
+    <div class="hanbager">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div id="menu" class="head-right f-SVN-Russell">
+        <li><a></a><span><img src="./assets/teaser/images/nav-1.png" alt="Trang chủ"></span></li>
+        <li><a></a><span><img src="./assets/teaser/images/nav-2.png" alt="Phúc lợi"></span></li>
+        <li><a></a><span><img src="./assets/teaser/images/nav-3.png" alt="Gameplay đỉnh cao"></span></li>
+        <li><a></a><span><img src="./assets/teaser/images/nav-4.png" alt="Đua top đế vương"></span></li>
+        <li><a></a><span><img src="./assets/teaser/images/nav-5.png" alt="Danh tướng"></span></li>
+        <li><a></a><span><img src="./assets/teaser/images/nav-6.png" alt="Tính năng đặc sắc"></span></li>
+        <div class="foot-btn"><img src="./assets/teaser/images/bq.png" alt="Footer"></div>
+    </div>
+</div>
+<div class="ic pic-web">
+    <div class="music-icon" id="musicIcon">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <a href="https://www.facebook.com/thieunientaydu.splay.vn/" target="_blank"><img src="./assets/teaser/images/ic-fb.png" alt="Facebook"></a>
+    <a href="https://www.facebook.com/groups/thieunientaydu.splay.vn/" target="_blank"><img src="./assets/teaser/images/ic-group.png" alt="Group"></a>
+</div>
+<div class="foot-btn"><img src="./assets/teaser/images/bq.png" alt="Footer"></div>
+<div class="nav-bot">
+    <a href="" target="_blank"><img src="./assets/teaser/images/bt-napthe-m.png" alt="Nạp thẻ"></a>
+    <a href="https://tntd.onelink.me/KfFD/teaser" target="_blank"><img src="./assets/teaser/images/bt-taigame-m.png" alt="Tải game"></a>
+    <a href="javascript:void(0)" class="fc-fb mobile-fb show-dangky" ><img src="./assets/teaser/images/bt-giftcode-m.png" alt="Giftcode"></a>
+</div>
+<!-- Fixed box -->
+<div class="nav_right open">
+    <p class="text_center qr_code"> <span><img src="./assets/teaser/images/qrcode.png" width="111" height="111" class="qrcode" alt=""><i></i></span> </p>
+    <ul class="buttai">
+        <li class="app-info__install--pc button-appstore"> <a class="" target="_blank" href="https://tntd.onelink.me/KfFD/teaser" title="Tải Appstore"></a> </li>
+        <li class="app-info__install--pc button-googleplay"> <a class="" target="_blank" href="https://tntd.onelink.me/KfFD/teaser" title="Tải Googleplay"></a> </li>
+        <li class="app-info__install--pc button-apk"> <a class="" target="_blank" href="https://app.mobigame.vn/thieunientaydu/thieunientaydu.apk" title="Tải APK"></a> </li>
+    </ul>
+    <a href="javascript:void(0)" class="gift_code show-dangky" title="Giftcode"></a>
+    <span class="i_control"></span>
+</div>
+<script type="text/javascript">
+    var template = {
+        menuLists: "Trang chủ|Đăng ký trước|Linh tướng phổ|Đua top|Bản đồ|Đặc sắc",
+    };
+
+    if (template.awardName) {
+        template.awardName.split('|').forEach((item, index) => {
+            $('#reservation-process .min-rewardname').eq(index).text(item);
+        });
+    }
+    if (template.menuLists) {
+        template.menuLists.split('|').forEach((item, index) => {
+            $('#menu a').eq(index).text(item);
+        });
+    }
+
+    let achievementTitle = [];
+    if (template.achievementTitle) {
+        achievementTitle = JSON.parse(template.achievementTitle);
+    }
+</script>
+
+<script type="text/javascript" src="./assets/teaser/js/index.js?flag=dscgsubscribe?v=1.4"></script>
+
+
+<!-- Popup dang ky -->
+<div class="popup popup-detail" id="popup-dangky" style="display: none;">
+    <div class="content-popup">
+        <div class="wrapper-popup2">
+            <div class="title-detail2">
+                <img class="img-responsive center-align" src="./assets/teaser/images/title-dangky.png" alt="Đăng ký thông tin">
+            </div>
+            <div class="content-new-detail1">
+                <div class="text">
+                    <div class="login-box f-SVN-Russell">
+                        <div class="input"><input type="text" name="hoten2" id="hoten2" placeholder="Nhập Họ Tên"></div>
+                        <div class="input"><input type="text" name="sdt2" id="sdt2" placeholder="Nhập Số Điện Thoại"></div>
+                    </div>
+                    <a href="javascript:void(0)" id="registerGiftCodeButton" class="bt-dk f-SVN-Vintage"></a>
+                </div>
+            </div>
+            <a class="close-content2"></a>
+        </div>
+    </div>
+</div>
+
+<!-- Popup thong bao -->
+<div class="popup popup-detail" id="popup-thongbao" style="display: none;">
+    <div class="content-popup">
+        <div class="wrapper-popup2">
+            <div class="title-detail3">
+                <img class="img-responsive center-align" src="./assets/teaser/images/title-thongbao.png" alt="Thầy phán">
+            </div>
+            <div class="content-new-detail1 f-SVN-Russell">
+                <div class="text">
+                    <div class="thongbao-box">
+                        <p><span>Chúc mừng bạn đã đăng ký thành công</span></p>
+                    </div>
+                    <div class="gift">
+                        <p>Mã Giftcode của bạn là</p>
+                        <t id="giftcode"></t>
+                    </div>
+                </div>
+            </div>
+            <a class="close-content2"></a>
+        </div>
+    </div>
+</div>
+
+<!-- Popup the le dang ky truoc-->
+<div class="popup popup-detail" id="popup-theledkt" style="display: none;">
+    <div class="content-popup">
+        <div class="wrapper-popup3">
+            <div class="title-detail"><img class="img-responsive center-align" src="./assets/teaser/images/title-tldkt.png" alt="Thầy phán"></div>
+            <div class="content-new-detail2 scrollbar-inner">
+                <div class="thele-text f-SVN-Russell">
+                    <p><span>THỂ LỆ THAM GIA & QUAY THƯỞNG SỰ KIỆN ĐĂNG KÝ TRƯỚC</span><br></p>
+                    <p><span>⏰ Thời gian:</span> Sự kiện sẽ diễn ra từ 20/08/2025 đến 23:59 - 09/09/2025<br></p>
+                    <p><span>CÁCH THỨC THAM GIA</span></p>
+
+                    <p><span>Bước 1:</span> Người chơi nhấn nút ĐĂNG KÝ NGAY, để đăng ký tải trước game Thiếu Niên Tây Du tại App Store và Google Play.</p>
+                    <p><span>Bước 2:</span> Sau khi đăng ký xong hãy bấm nút NHẬN QUÀ để các điền thông tin sau:</br>
+                    - Họ tên</br>
+                    - Tên tài khoản Scoin (tạo tài khoản Scoin tại scoin.vn)</br>
+                    - SĐT</br>
+                    - Email</br>
+                    - Địa chỉ nhận quà (BTC sẽ gửi quà cho bạn nếu bạn trúng giải theo địa chỉ này)</br>
+                    </p>
+                    <p><span>Bước 3:</span> Nhấn vào ô Đồng ý các chính sách của chương trình và xác nhận</p>
+
+                    <p><span>CÁCH THỨC QUAY THƯỞNG</span></p>
+
+                    <p>- BTC sẽ tiến hành 02 đợt quay thưởng để tìm ra các người chơi may mắn và trao quà.</br>
+                    - Quá trình quay thưởng sẽ được phát sóng trực tiếp trên livestream tại Fanpage Thiếu Niên Tây Du VTC</br>
+                    - Thời gian quay thưởng:</br>
+                    - Đợt 1: 19:00 - 30/08/2025</br>
+                    - Đợt 2: 19:00 - 10/09/2025</br>
+                    </p>
+
+                    <p><span>PHẦN THƯỞNG</span></p>
+
+                    <p><span>Phần thưởng đạt mốc</span></br>
+                    - Quà của TOÀN BỘ mốc thưởng đã đạt được sẽ được công bố trên fanpage chính thức dưới dạng GIFTCODE chung vào ngày ra mắt game</br>
+                    </br>
+                    Phần thưởng quay thưởng</br>
+                    BTC sẽ livestream quay thưởng 02 đợt  với nhiều phần quà giá trị</br>
+                    ĐỢT 1: Thời gian ghi nhận đăng ký: 20/08/2025 - 29/08/2025</br>
+                    ĐỢT 2: Thời gian ghi nhận đăng ký: 30/08/2025 - 09/09/2025</br>
+                        </br>
+                    Quà tặng:</br>
+                    Đợt 1:</br>
+                    01 bộ quà POSM VIP Limited</br>
+                    03 Blindbox nhân vật Tây Du độc quyền</br>
+                    03 gối ôm Tây Du độc quyền</br>
+                    05 Scoin Voucher trị giá 500.000</br>
+                        </br>
+                    Đợt 2:</br>
+                    01 bộ quà POSM VIP Limited</br>
+                    03 Blindbox nhân vật Tây Du độc quyền</br>
+                    05 gối ôm Tây Du độc quyền</br>
+                    05 Scoin Voucher trị giá 500.000</br>
+                        </br>
+                    Lưu ý
+                    - Một cá nhân có thể tham gia đăng ký cả 2 đợt quay thưởng</br>
+                    - Với mỗi đợt quay thưởng chỉ được phép đăng ký 01 sdt. Đối với các trường hợp vi phạm, BTC có quyền hủy bỏ thông tin hoặc phần thưởng của cá nhân vi phạm</br>
+                    - SĐT yêu cầu phải chính xác,vì trong thời gian quay thưởng BTC sẽ có gọi xác nhận với người chơi trúng thưởng. Trong trường hợp không liên lạc được, BTC sẽ hủy giải và trao cơ hội cho người chơi khác.</br>
+                    - Các quà tặng hiện vật sẽ được gửi qua đường bưu điện trong vòng 45 ngày sau khi chương trình kết thúc. </br>
+                    - Mọi thắc mắc cần được giải đáp hãy liên hện về Fanpage Thiếu Niên Tây Du VTC: m/me/thieunientaydu.splay.vn để được hỗ trợ </br>
+                    - Quyết định của BTC sẽ là quyết định cuối cùng </br>
+                    </p>
+                </div>
+            </div>
+            <a class="close-content2"></a>
+        </div>
+    </div>
+</div>
+
+<!-- Popup the le dua top-->
+<div class="popup popup-detail" id="popup-theledt" style="display: none;">
+    <div class="content-popup">
+        <div class="wrapper-popup3">
+            <div class="title-detail4"><img class="img-responsive center-align" src="./assets/teaser/images/title-tldt.png" alt="Thầy phán"></div>
+            <div class="content-new-detail2 scrollbar-inner">
+                <div class="thele-text f-SVN-Russell">
+                    <p><span>🔥🔥🔥HÀNH GIẢ ĐUA TOP - ON TOP NHẬN QUÀ !!!</span></p>
+
+                    <p><span>🔴 Đối tượng:</span> Toàn bộ các nhân vật nằm trong các máy chủ được mở trong thời gian diễn ra sự kiện.</p>
+
+                    <p><span>📜 Thể lệ tham gia: </span></p>
+                    <p>
+                        - Toàn bộ người chơi đều được tham gia Đua TOP Lực Chiến - Liên Server<br>
+                        - Bảng xếp hạng sẽ tính dựa trên tổng số lực chiến cá nhân của người chơi<br>
+                        - Vào 10:00:00 ngày xx/10/2025 sẽ chốt tổng kết bảng xếp hạng Lực Chiến Liên Server<br>
+                        - Trong thời gian sự kiện, TOP 20 Hành Giả  có Lực chiến cao nhất Liên Server sẽ nhận được quà  theo hạng của mình. Phần quà sẽ bao gồm quà hiện vật và quà đạo cụ ingame.<br>
+                    </p>
+                    <p><span>🎁 Phần thưởng xếp hạng:</span></p>
+                    <p><span>🥇Top 1: </span><br>
+                        - Iphone 16 Pro Max x1<br>
+                        - POSM Mô Hình Độc Quyền x1<br>
+                        - Ngoại Quan Nhân Vật Chính "Long Ngâm Phụng Vũ" x1<br>
+                        - Danh hiệu "Long Ngâm Phụng Vũ" x1<br>
+                        - Khung Avatar "Long Ngâm Phụng Vũ" x1<br>
+                        - Nền Chat "Long Ngâm Phụng Vũ" x1<br>
+                        - Túi Chọn Pháp Bảo SSR x3<br>
+                        - Rương Vật Liệu Tiến Bậc Pháp Bảo x100<br>
+                        - 10,000 Ngọc</p>
+                    ----------------<br>
+                    <p><span>🥈Top 2:</span><br>
+                        - 10 Triệu Scoin<br>
+                        - POSM Mô Hình Độc Quyền x1<br>
+                        - Ngoại Quan Nhân Vật Chính "Long Ngâm Phụng Vũ" x1<br>
+                        - Danh hiệu "Chiến Thần Tây Du" x1<br>
+                        - Khung Avatar x1<br>
+                        - Nền Chat x1<br>
+                        - Túi Chọn Pháp Bảo SSR x2<br>
+                        - Rương Vật Liệu Tiến Bậc Pháp Bảo x1<br>
+                        - 7,000 Ngọc</p>
+                    ----------------<br>
+                    <p><span>🥉Top 3</span><br>
+                        - 5 Triệu Scoin<br>
+                        - POSM Mô Hình Độc Quyền x1<br>
+                        - Ngoại Quan Nhân Vật Chính "Long Ngâm Phụng Vũ" x1<br>
+                        - Danh hiệu "Thánh Giả Kim Thân" x1<br>
+                        - Khung Avatar x1<br>
+                        - Nền Chat x1<br>
+                        - Túi Chọn Pháp Bảo SSR x1<br>
+                        - Rương Vật Liệu Tiến Bậc Pháp Bảo x50<br>
+                        - 5,000 Ngọc</p>
+                    ----------------<br>
+                    <p><span>🥉Top 4-10</span><br>
+                        - POSM Mô Hình Độc Quyền x1<br>
+                        - Danh hiệu "Cao Thủ Kim Cang" x1<br>
+                        - Khung Avatar x1<br>
+                        - Túi Chọn Pháp Bảo SSR x1<br>
+                        - Rương Vật Liệu Tiến Bậc Pháp Bảo x30<br>
+                        - 3,000 Ngọc</p>
+                    <p><span>🔥TOP 11 – 20</span><br>
+                        - Danh hiệu "Tinh Anh Tam Giới"<br>
+                        - Khung Avatar x1<br>
+                        - Túi Chọn Pháp Bảo SSR x1<br>
+                        - 1500 Ngọc</p>
+                    <p><span>⚠️ Lưu ý quan trọng</span><br>
+                        - Những người chơi có hành vi hoặc dấu hiện gian lận, dùng Kim Nguyên và Bảo Ngọc không hợp pháp, cố tình trục lợi từ Bug của game đều sẽ bị hủy tư cách tham gia đua top. Đặc biệt, người chơi nào phát giác, có bằng chứng cụ thể về bất kỳ người chơi nào trong sự kiện Đua TOP Lực Chiến - Liên Server để báo cáo cho NPH thì sẽ nhận được phần quà cực kỳ đặc biệt.<br>
+                        - Phần quà ingame sẽ trao trễ nhất sau khi kết thúc đua top 7 ngày. Chú ý: Quà HIỆN VẬT sẽ được trao trễ nhất 30 ngày tính từ khi người chơi đạt giải hoàn thành thủ tục nhận thưởng.<br>
+                        - Sau khi kết thúc thời gian đua top 7 ngày mà người chơi đạt top không liên hệ về Fanpage Thiếu Niên Tây Du VTC để làm các thủ tục nhận thưởng thì sẽ huỷ giải và dùng để tổ chức sự kiện lần sau<br>
+                        - Trong mọi trường hợp, BTC sẽ là người đưa ra quyết định cuối cùng.<br>
+                    </p>
+                </div>
+            </div>
+            <a class="close-content2"></a>
+        </div>
+    </div>
+</div>
+
+<!-- popup--->
+<script type="text/javascript" src="./assets/teaser/js/bootstrap.min.js?v=1.2.6"></script>
+<script type="text/javascript" src="./assets/teaser/js/vendor.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $('.close-content').click(function() {
+            $('.popup').fadeOut();
+        });
+        $('.close-content2').click(function() {
+            $('.popup').fadeOut();
+        });
+        $('.show-dangky').click(function() {
+            $('#popup-dangky').fadeIn();
+        });
+        $('.show-thongbao').click(function() {
+            $('#popup-thongbao').fadeIn();
+        });
+        $('.show-theledkt').click(function() {
+            $('#popup-theledkt').fadeIn();
+        });
+        $('.show-theledt').click(function() {
+            $('#popup-theledt').fadeIn();
+        });
+        // scroll
+        jQuery(document).ready(function() {
+            jQuery('.content-new-detail2').scrollbar();
+
+        });
+    });
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const musicIcon = document.getElementById("musicIcon");
+        const bgMusic = document.getElementById("bgMusic");
+
+        let isPlaying = false;
+
+        musicIcon.addEventListener("click", () => {
+            if (isPlaying) {
+                bgMusic.pause();
+                musicIcon.classList.remove("playing");
+            } else {
+                bgMusic.play();
+                musicIcon.classList.add("playing");
+            }
+            isPlaying = !isPlaying;
+        });
+    });
+</script>
+
+<!-- slide images pc ---->
+<script type="text/javascript" src="./assets/teaser/js/app.js"></script>
+<script type="text/javascript" src="./assets/teaser/js/swiper-3.4.2.min.js"></script>
+
+<!-- class nhan vat --->
+<script type="text/javascript" src="./assets/teaser/js/swiper.animate1.0.2.min.js"></script>
+<script type="text/javascript" src="./assets/teaser/js/cover20200617.js"></script>
+
+<!-- video -->
+<script type="text/javascript" src="./assets/teaser/js/1.promotion.bundle.js"></script>
+<script type="text/javascript" src="./assets/teaser/js/promotion.bundle.js"></script>
+
+<!-- slide ban do --->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+<script  src="./assets/teaser/js/script.js"></script>
+<script>
+    $(document).ready(function() {
+        // function isEmail(email) {
+        //     var testEmail = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
+        //     if (testEmail.test(email)) {
+        //         return true;
+        //     }
+        //     else return false;
+        // };
+        //check email
+        function isPhone(phone) {
+            var vnf_regex = /((09|03|07|08|05)+([0-9]{8})\b)/g;
+            if (vnf_regex.test(phone) == false) {
+                return false;
+            } else {
+                return true;
+            }
+
+        }
+
+        $(document).on('click', '#registerGiftCodeButton', function () {
+            $('#registerGiftCodeButton').prop('disabled', true)
+            // var email = $("#email").val();
+            var hoten = $("#hoten2").val();
+            var sdt = $("#sdt2").val();
+            // if (email == ''){
+            //     swal("Lỗi!", "Vui lòng nhập email", "error");
+            //     return false;
+            // }
+            if (hoten == ''){
+                swal("Lỗi!", "Vui lòng nhập họ và tên", "error");
+                return false;
+            }
+            if (sdt == ''){
+                swal("Lỗi!", "Vui lòng nhập số điện thoại", "error");
+                return false;
+            }
+            if (!isPhone(sdt)){
+                swal("Lỗi!", "không đúng định dạng số điện thoại", "error");
+                return false;
+            }
+
+            let dt = {
+                name: hoten,
+            }
+            if(isPhone(sdt)) {
+                dt['phone'] = sdt
+            }
+            fetch('https://api.ipify.org?format=json')
+                .then(response => response.json())
+                .then(data => {
+                    const clientIp = data.ip;
+                    dt['ip'] = clientIp;
+                    dt = JSON.stringify(dt)
+
+                    // Gửi IP lên server qua AJAX
+                    $.ajax({
+                        url: 'https://thieunientaydu.splay.vn/api/get-code',
+                        type: 'POST',
+                        dataType: 'json',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Accept': 'application/json'
+                        },
+                        data: dt,
+                        success: function (response2) {
+                            if (response2.code == 1) {
+                                $('#popup-thongbao').fadeIn();
+                                $("#giftcode").html(response2.gift_code);
+                            } else {
+                                $('#popup-thongbao').fadeIn();
+                                $("#giftcode").html('Giftcode đã hết, vui lòng liên hệ Fanpage');
+                            }
+                            $('#registerGiftCodeButton').prop('disabled', false)
+                        },
+                    });
+                })
+                .catch(error => console.error('Failed to fetch IP:', error));
+        })
+    });
+</script>
+</body>
+
+</html>
