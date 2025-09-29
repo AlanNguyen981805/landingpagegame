@@ -1278,10 +1278,10 @@ html,body{font-size:10px;}
 .features__carousel .swiper-pagination-bullet-active{background:#fff109;width:42px;height:5px;}
 .features__carousel .swiper-button-next{background:none; right:30px}
 .features__carousel .swiper-button-next:after{display:block}
-.features__carousel .swiper-button-next .slide-next{background:url(../images/slideimg/slide_next.jpg)  no-repeat; background-size: contain;width:57px;height:57px;}
+.features__carousel .swiper-button-next .slide-next{background:url(../images/slideimg/slide_next.png)  no-repeat; background-size: contain;width:57px;height:57px;}
 .features__carousel .swiper-button-prev{background:none; left:0}
 .features__carousel .swiper-button-prev:after{display:none}
-.features__carousel .swiper-button-prev .slide-prev{background:url(../images/slideimg/slide_pre.jpg)  no-repeat;background-size: contain;width:57px;height:57px}
+.features__carousel .swiper-button-prev .slide-prev{background:url(../images/slideimg/slide_pre.png)  no-repeat;background-size: contain;width:57px;height:57px}
 /* slide server mobile*/
 @media only screen and (max-width: 912px) {
 	.sec6-title{left:2%;top:15%;width:100%;}
