@@ -903,13 +903,13 @@ html,body{font-size:10px;}
 .class_opa_box{ position:absolute; width:100%; height:auto; z-index:4;top:90%}
 .class_tab{position:absolute; width:100%; display: flex; flex-wrap: wrap; justify-content: center;}
 .class_tab li{width:76px; height:84px;margin: 0 1% 0 0; cursor:pointer;}
-#class_tab_yeulinh{ background:url("../images/class/dragon.png") no-repeat; background-size: 100%}
+#class_tab_yeulinh{ background:url("../images/class/dragon-disable.png") no-repeat; background-size: 100%}
 #class_tab_yeulinh.on{ background:url("../images/class/dragon.png") no-repeat;background-size: 100%}
-#class_tab_nhangioi{ background:url("../images/class/electric.png") no-repeat;background-size: 100%}
+#class_tab_nhangioi{ background:url("../images/class/electric-disable.png") no-repeat;background-size: 100%}
 #class_tab_nhangioi.on{ background:url("../images/class/electric.png") no-repeat;background-size: 100%}
-#class_tab_cuuthien{ background:url("../images/class/fire.png") no-repeat;background-size: 100%}
+#class_tab_cuuthien{ background:url("../images/class/fire-disable.png") no-repeat;background-size: 100%}
 #class_tab_cuuthien.on{ background:url("../images/class/fire.png") no-repeat;background-size: 100%}
-#class_tab_cuclac{ background:url("../images/class/water.png") no-repeat;background-size: 100%}
+#class_tab_cuclac{ background:url("../images/class/water-disable.png") no-repeat;background-size: 100%}
 #class_tab_cuclac.on{ background:url("../images/class/water.png") no-repeat;background-size: 100%}
 
 @media(max-width:912px){
