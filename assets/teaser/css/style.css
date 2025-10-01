@@ -895,22 +895,22 @@ html,body{font-size:10px;}
 .class_img{position:relative; z-index:2;margin:5% 0 0 8%;width:90%}
 .class-title{margin:25% 0 0 87%; z-index:4; width:10%; position: absolute;}
 .class_bg{ position:absolute; z-index:1;background-size:cover;}
-.class_bg_yeulinh{width:100%;height: 100vh;z-index:1;background: url("../images/class/bg-yeulinh.jpg")no-repeat center center;background-size:cover;}
-.class_bg_nhangioi{width:100%;height: 100vh; z-index:1;background: url("../images/class/bg-nhangioi.jpg")no-repeat center center;background-size:cover;}
-.class_bg_cuuthien{width:100%;height: 100vh;z-index:1;background: url("../images/class/bg-cuuthien.jpg")no-repeat center center;background-size:cover;}
-.class_bg_cuclac{width:100%;height: 100vh;z-index:1;background: url("../images/class/bg-cuclac.jpg")no-repeat center center;background-size:cover;}
+.class_bg_yeulinh{width:100%;height: 100vh;z-index:1;background: url("../images/class/bg-dragon.jpg")no-repeat center center;background-size:cover;}
+.class_bg_nhangioi{width:100%;height: 100vh; z-index:1;background: url("../images/class/bg-electric.jpg")no-repeat center center;background-size:cover;}
+.class_bg_cuuthien{width:100%;height: 100vh;z-index:1;background: url("../images/class/bg-fire.jpg")no-repeat center center;background-size:cover;}
+.class_bg_cuclac{width:100%;height: 100vh;z-index:1;background: url("../images/class/bg-water.jpg")no-repeat center center;background-size:cover;}
 
 .class_opa_box{ position:absolute; width:100%; height:auto; z-index:4;top:90%}
 .class_tab{position:absolute; width:100%; display: flex; flex-wrap: wrap; justify-content: center;}
 .class_tab li{width:76px; height:84px;margin: 0 1% 0 0; cursor:pointer;}
-#class_tab_yeulinh{ background:url("../images/class/tab-yeulinh.png") no-repeat; background-size: 100%}
-#class_tab_yeulinh.on{ background:url("../images/class/tab-yeulinh-hover.png") no-repeat;background-size: 100%}
-#class_tab_nhangioi{ background:url("../images/class/tab-nhangioi.png") no-repeat;background-size: 100%}
-#class_tab_nhangioi.on{ background:url("../images/class/tab-nhangioi-hover.png") no-repeat;background-size: 100%}
-#class_tab_cuuthien{ background:url("../images/class/tab-cuuthien.png") no-repeat;background-size: 100%}
-#class_tab_cuuthien.on{ background:url("../images/class/tab-cuuthien-hover.png") no-repeat;background-size: 100%}
-#class_tab_cuclac{ background:url("../images/class/tab-cuclac.png") no-repeat;background-size: 100%}
-#class_tab_cuclac.on{ background:url("../images/class/tab-cuclac-hover.png") no-repeat;background-size: 100%}
+#class_tab_yeulinh{ background:url("../images/class/dragon.png") no-repeat; background-size: 100%}
+#class_tab_yeulinh.on{ background:url("../images/class/dragon.png") no-repeat;background-size: 100%}
+#class_tab_nhangioi{ background:url("../images/class/electric.png") no-repeat;background-size: 100%}
+#class_tab_nhangioi.on{ background:url("../images/class/electric.png") no-repeat;background-size: 100%}
+#class_tab_cuuthien{ background:url("../images/class/fire.png") no-repeat;background-size: 100%}
+#class_tab_cuuthien.on{ background:url("../images/class/fire.png") no-repeat;background-size: 100%}
+#class_tab_cuclac{ background:url("../images/class/water.png") no-repeat;background-size: 100%}
+#class_tab_cuclac.on{ background:url("../images/class/water.png") no-repeat;background-size: 100%}
 
 @media(max-width:912px){
 	.sec5-bn-genaral{width:100%;top:75%;}
