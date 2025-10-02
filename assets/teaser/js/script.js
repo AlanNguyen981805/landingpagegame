@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $('.product__slider').slick({
-        autoplay: 2000,
+        // autoplay: 2000,
         autoplaySpeed: 1500,
         speed: 600,
         draggable: true,
